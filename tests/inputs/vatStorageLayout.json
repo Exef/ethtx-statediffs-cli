@@ -1,0 +1,227 @@
+{
+  "vat.sol": {
+    "Vat": {
+      "storageLayout": {
+        "storage": [
+          {
+            "astId": 6366,
+            "contract": "vat.sol:Vat",
+            "label": "wards",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 6432,
+            "contract": "vat.sol:Vat",
+            "label": "can",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 6509,
+            "contract": "vat.sol:Vat",
+            "label": "ilks",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_bytes32,t_struct(Ilk)6500_storage)"
+          },
+          {
+            "astId": 6515,
+            "contract": "vat.sol:Vat",
+            "label": "urns",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Urn)6505_storage))"
+          },
+          {
+            "astId": 6521,
+            "contract": "vat.sol:Vat",
+            "label": "gem",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 6525,
+            "contract": "vat.sol:Vat",
+            "label": "dai",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 6529,
+            "contract": "vat.sol:Vat",
+            "label": "sin",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 6531,
+            "contract": "vat.sol:Vat",
+            "label": "debt",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6533,
+            "contract": "vat.sol:Vat",
+            "label": "vice",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6535,
+            "contract": "vat.sol:Vat",
+            "label": "Line",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 6537,
+            "contract": "vat.sol:Vat",
+            "label": "live",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_uint256"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bytes32": {
+            "encoding": "inplace",
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_struct(Urn)6505_storage)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => struct Vat.Urn)",
+            "numberOfBytes": "32",
+            "value": "t_struct(Urn)6505_storage"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Urn)6505_storage))": {
+            "encoding": "mapping",
+            "key": "t_bytes32",
+            "label": "mapping(bytes32 => mapping(address => struct Vat.Urn))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_struct(Urn)6505_storage)"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_bytes32",
+            "label": "mapping(bytes32 => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_bytes32,t_struct(Ilk)6500_storage)": {
+            "encoding": "mapping",
+            "key": "t_bytes32",
+            "label": "mapping(bytes32 => struct Vat.Ilk)",
+            "numberOfBytes": "32",
+            "value": "t_struct(Ilk)6500_storage"
+          },
+          "t_struct(Ilk)6500_storage": {
+            "encoding": "inplace",
+            "label": "struct Vat.Ilk",
+            "members": [
+              {
+                "astId": 6491,
+                "contract": "vat.sol:Vat",
+                "label": "Art",
+                "offset": 0,
+                "slot": "0",
+                "type": "t_uint256"
+              },
+              {
+                "astId": 6493,
+                "contract": "vat.sol:Vat",
+                "label": "rate",
+                "offset": 0,
+                "slot": "1",
+                "type": "t_uint256"
+              },
+              {
+                "astId": 6495,
+                "contract": "vat.sol:Vat",
+                "label": "spot",
+                "offset": 0,
+                "slot": "2",
+                "type": "t_uint256"
+              },
+              {
+                "astId": 6497,
+                "contract": "vat.sol:Vat",
+                "label": "line",
+                "offset": 0,
+                "slot": "3",
+                "type": "t_uint256"
+              },
+              {
+                "astId": 6499,
+                "contract": "vat.sol:Vat",
+                "label": "dust",
+                "offset": 0,
+                "slot": "4",
+                "type": "t_uint256"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_struct(Urn)6505_storage": {
+            "encoding": "inplace",
+            "label": "struct Vat.Urn",
+            "members": [
+              {
+                "astId": 6502,
+                "contract": "vat.sol:Vat",
+                "label": "ink",
+                "offset": 0,
+                "slot": "0",
+                "type": "t_uint256"
+              },
+              {
+                "astId": 6504,
+                "contract": "vat.sol:Vat",
+                "label": "art",
+                "offset": 0,
+                "slot": "1",
+                "type": "t_uint256"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
