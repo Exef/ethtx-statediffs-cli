@@ -1,0 +1,2092 @@
+{
+  "contracts": {
+    "cat.sol": {
+      "Cat": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 78,
+              "contract": "cat.sol:Cat",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 135,
+              "contract": "cat.sol:Cat",
+              "label": "ilks",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_struct(Ilk)131_storage)"
+            },
+            {
+              "astId": 137,
+              "contract": "cat.sol:Cat",
+              "label": "live",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 139,
+              "contract": "cat.sol:Cat",
+              "label": "vat",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(VatLike)66"
+            },
+            {
+              "astId": 141,
+              "contract": "cat.sol:Cat",
+              "label": "vow",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_contract(VowLike)72"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(VatLike)66": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VowLike)72": {
+              "encoding": "inplace",
+              "label": "contract VowLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_bytes32,t_struct(Ilk)131_storage)": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => struct Cat.Ilk)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Ilk)131_storage"
+            },
+            "t_struct(Ilk)131_storage": {
+              "encoding": "inplace",
+              "label": "struct Cat.Ilk",
+              "members": [
+                {
+                  "astId": 126,
+                  "contract": "cat.sol:Cat",
+                  "label": "flip",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 128,
+                  "contract": "cat.sol:Cat",
+                  "label": "chop",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 130,
+                  "contract": "cat.sol:Cat",
+                  "label": "lump",
+                  "offset": 0,
+                  "slot": "2",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "Kicker": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } },
+      "VowLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "dai.sol": {
+      "Dai": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 551,
+              "contract": "dai.sol:Dai",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 611,
+              "contract": "dai.sol:Dai",
+              "label": "totalSupply",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 615,
+              "contract": "dai.sol:Dai",
+              "label": "balanceOf",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 621,
+              "contract": "dai.sol:Dai",
+              "label": "allowance",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+            },
+            {
+              "astId": 625,
+              "contract": "dai.sol:Dai",
+              "label": "nonces",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 685,
+              "contract": "dai.sol:Dai",
+              "label": "DOMAIN_SEPARATOR",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_bytes32"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32",
+              "value": "t_mapping(t_address,t_uint256)"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      }
+    },
+    "end.sol": {
+      "CatLike": { "storageLayout": { "storage": [], "types": null } },
+      "End": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 1323,
+              "contract": "end.sol:End",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 1371,
+              "contract": "end.sol:End",
+              "label": "vat",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(VatLike)1243"
+            },
+            {
+              "astId": 1373,
+              "contract": "end.sol:End",
+              "label": "cat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(CatLike)1258"
+            },
+            {
+              "astId": 1375,
+              "contract": "end.sol:End",
+              "label": "vow",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(VowLike)1266"
+            },
+            {
+              "astId": 1377,
+              "contract": "end.sol:End",
+              "label": "pot",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_contract(PotLike)1262"
+            },
+            {
+              "astId": 1379,
+              "contract": "end.sol:End",
+              "label": "spot",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_contract(Spotty)1317"
+            },
+            {
+              "astId": 1381,
+              "contract": "end.sol:End",
+              "label": "live",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 1383,
+              "contract": "end.sol:End",
+              "label": "when",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 1385,
+              "contract": "end.sol:End",
+              "label": "wait",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 1387,
+              "contract": "end.sol:End",
+              "label": "debt",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 1391,
+              "contract": "end.sol:End",
+              "label": "tag",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_bytes32,t_uint256)"
+            },
+            {
+              "astId": 1395,
+              "contract": "end.sol:End",
+              "label": "gap",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_mapping(t_bytes32,t_uint256)"
+            },
+            {
+              "astId": 1399,
+              "contract": "end.sol:End",
+              "label": "Art",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_mapping(t_bytes32,t_uint256)"
+            },
+            {
+              "astId": 1403,
+              "contract": "end.sol:End",
+              "label": "fix",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_mapping(t_bytes32,t_uint256)"
+            },
+            {
+              "astId": 1407,
+              "contract": "end.sol:End",
+              "label": "bag",
+              "offset": 0,
+              "slot": "14",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 1413,
+              "contract": "end.sol:End",
+              "label": "out",
+              "offset": 0,
+              "slot": "15",
+              "type": "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(CatLike)1258": {
+              "encoding": "inplace",
+              "label": "contract CatLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(PotLike)1262": {
+              "encoding": "inplace",
+              "label": "contract PotLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(Spotty)1317": {
+              "encoding": "inplace",
+              "label": "contract Spotty",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)1243": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VowLike)1266": {
+              "encoding": "inplace",
+              "label": "contract VowLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => mapping(address => uint256))",
+              "numberOfBytes": "32",
+              "value": "t_mapping(t_address,t_uint256)"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "Flippy": { "storageLayout": { "storage": [], "types": null } },
+      "PipLike": { "storageLayout": { "storage": [], "types": null } },
+      "PotLike": { "storageLayout": { "storage": [], "types": null } },
+      "Spotty": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } },
+      "VowLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "flap.sol": {
+      "Flapper": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 2353,
+              "contract": "flap.sol:Flapper",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 2414,
+              "contract": "flap.sol:Flapper",
+              "label": "bids",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_uint256,t_struct(Bid)2410_storage)"
+            },
+            {
+              "astId": 2416,
+              "contract": "flap.sol:Flapper",
+              "label": "vat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(VatLike)2330"
+            },
+            {
+              "astId": 2418,
+              "contract": "flap.sol:Flapper",
+              "label": "gem",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(GemLike)2347"
+            },
+            {
+              "astId": 2424,
+              "contract": "flap.sol:Flapper",
+              "label": "beg",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 2427,
+              "contract": "flap.sol:Flapper",
+              "label": "ttl",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 2430,
+              "contract": "flap.sol:Flapper",
+              "label": "tau",
+              "offset": 6,
+              "slot": "5",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 2433,
+              "contract": "flap.sol:Flapper",
+              "label": "kicks",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 2435,
+              "contract": "flap.sol:Flapper",
+              "label": "live",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_contract(GemLike)2347": {
+              "encoding": "inplace",
+              "label": "contract GemLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)2330": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_uint256,t_struct(Bid)2410_storage)": {
+              "encoding": "mapping",
+              "key": "t_uint256",
+              "label": "mapping(uint256 => struct Flapper.Bid)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Bid)2410_storage"
+            },
+            "t_struct(Bid)2410_storage": {
+              "encoding": "inplace",
+              "label": "struct Flapper.Bid",
+              "members": [
+                {
+                  "astId": 2401,
+                  "contract": "flap.sol:Flapper",
+                  "label": "bid",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 2403,
+                  "contract": "flap.sol:Flapper",
+                  "label": "lot",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 2405,
+                  "contract": "flap.sol:Flapper",
+                  "label": "guy",
+                  "offset": 0,
+                  "slot": "2",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 2407,
+                  "contract": "flap.sol:Flapper",
+                  "label": "tic",
+                  "offset": 20,
+                  "slot": "2",
+                  "type": "t_uint48"
+                },
+                {
+                  "astId": 2409,
+                  "contract": "flap.sol:Flapper",
+                  "label": "end",
+                  "offset": 26,
+                  "slot": "2",
+                  "type": "t_uint48"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "encoding": "inplace",
+              "label": "uint48",
+              "numberOfBytes": "6"
+            }
+          }
+        }
+      },
+      "GemLike": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "flip.sol": {
+      "Flipper": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 3020,
+              "contract": "flip.sol:Flipper",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 3087,
+              "contract": "flip.sol:Flipper",
+              "label": "bids",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_uint256,t_struct(Bid)3083_storage)"
+            },
+            {
+              "astId": 3089,
+              "contract": "flip.sol:Flipper",
+              "label": "vat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(VatLike)3014"
+            },
+            {
+              "astId": 3091,
+              "contract": "flip.sol:Flipper",
+              "label": "ilk",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_bytes32"
+            },
+            {
+              "astId": 3097,
+              "contract": "flip.sol:Flipper",
+              "label": "beg",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 3100,
+              "contract": "flip.sol:Flipper",
+              "label": "ttl",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 3103,
+              "contract": "flip.sol:Flipper",
+              "label": "tau",
+              "offset": 6,
+              "slot": "5",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 3106,
+              "contract": "flip.sol:Flipper",
+              "label": "kicks",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(VatLike)3014": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_uint256,t_struct(Bid)3083_storage)": {
+              "encoding": "mapping",
+              "key": "t_uint256",
+              "label": "mapping(uint256 => struct Flipper.Bid)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Bid)3083_storage"
+            },
+            "t_struct(Bid)3083_storage": {
+              "encoding": "inplace",
+              "label": "struct Flipper.Bid",
+              "members": [
+                {
+                  "astId": 3068,
+                  "contract": "flip.sol:Flipper",
+                  "label": "bid",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 3070,
+                  "contract": "flip.sol:Flipper",
+                  "label": "lot",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 3072,
+                  "contract": "flip.sol:Flipper",
+                  "label": "guy",
+                  "offset": 0,
+                  "slot": "2",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 3074,
+                  "contract": "flip.sol:Flipper",
+                  "label": "tic",
+                  "offset": 20,
+                  "slot": "2",
+                  "type": "t_uint48"
+                },
+                {
+                  "astId": 3076,
+                  "contract": "flip.sol:Flipper",
+                  "label": "end",
+                  "offset": 26,
+                  "slot": "2",
+                  "type": "t_uint48"
+                },
+                {
+                  "astId": 3078,
+                  "contract": "flip.sol:Flipper",
+                  "label": "usr",
+                  "offset": 0,
+                  "slot": "3",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 3080,
+                  "contract": "flip.sol:Flipper",
+                  "label": "gal",
+                  "offset": 0,
+                  "slot": "4",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 3082,
+                  "contract": "flip.sol:Flipper",
+                  "label": "tab",
+                  "offset": 0,
+                  "slot": "5",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "encoding": "inplace",
+              "label": "uint48",
+              "numberOfBytes": "6"
+            }
+          }
+        }
+      },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "flop.sol": {
+      "Flopper": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 3866,
+              "contract": "flop.sol:Flopper",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 3927,
+              "contract": "flop.sol:Flopper",
+              "label": "bids",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_uint256,t_struct(Bid)3923_storage)"
+            },
+            {
+              "astId": 3929,
+              "contract": "flop.sol:Flopper",
+              "label": "vat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(VatLike)3852"
+            },
+            {
+              "astId": 3931,
+              "contract": "flop.sol:Flopper",
+              "label": "gem",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(GemLike)3860"
+            },
+            {
+              "astId": 3937,
+              "contract": "flop.sol:Flopper",
+              "label": "beg",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 3940,
+              "contract": "flop.sol:Flopper",
+              "label": "pad",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 3943,
+              "contract": "flop.sol:Flopper",
+              "label": "ttl",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 3946,
+              "contract": "flop.sol:Flopper",
+              "label": "tau",
+              "offset": 6,
+              "slot": "6",
+              "type": "t_uint48"
+            },
+            {
+              "astId": 3949,
+              "contract": "flop.sol:Flopper",
+              "label": "kicks",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 3951,
+              "contract": "flop.sol:Flopper",
+              "label": "live",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 3953,
+              "contract": "flop.sol:Flopper",
+              "label": "vow",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_address"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_contract(GemLike)3860": {
+              "encoding": "inplace",
+              "label": "contract GemLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)3852": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_uint256,t_struct(Bid)3923_storage)": {
+              "encoding": "mapping",
+              "key": "t_uint256",
+              "label": "mapping(uint256 => struct Flopper.Bid)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Bid)3923_storage"
+            },
+            "t_struct(Bid)3923_storage": {
+              "encoding": "inplace",
+              "label": "struct Flopper.Bid",
+              "members": [
+                {
+                  "astId": 3914,
+                  "contract": "flop.sol:Flopper",
+                  "label": "bid",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 3916,
+                  "contract": "flop.sol:Flopper",
+                  "label": "lot",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 3918,
+                  "contract": "flop.sol:Flopper",
+                  "label": "guy",
+                  "offset": 0,
+                  "slot": "2",
+                  "type": "t_address"
+                },
+                {
+                  "astId": 3920,
+                  "contract": "flop.sol:Flopper",
+                  "label": "tic",
+                  "offset": 20,
+                  "slot": "2",
+                  "type": "t_uint48"
+                },
+                {
+                  "astId": 3922,
+                  "contract": "flop.sol:Flopper",
+                  "label": "end",
+                  "offset": 26,
+                  "slot": "2",
+                  "type": "t_uint48"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            },
+            "t_uint48": {
+              "encoding": "inplace",
+              "label": "uint48",
+              "numberOfBytes": "6"
+            }
+          }
+        }
+      },
+      "GemLike": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "join.sol": {
+      "DSTokenLike": { "storageLayout": { "storage": [], "types": null } },
+      "DaiJoin": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 4929,
+              "contract": "join.sol:DaiJoin",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 4977,
+              "contract": "join.sol:DaiJoin",
+              "label": "vat",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(VatLike)4543"
+            },
+            {
+              "astId": 4979,
+              "contract": "join.sol:DaiJoin",
+              "label": "dai",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(DSTokenLike)4524"
+            },
+            {
+              "astId": 4981,
+              "contract": "join.sol:DaiJoin",
+              "label": "live",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_contract(DSTokenLike)4524": {
+              "encoding": "inplace",
+              "label": "contract DSTokenLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)4543": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "ETHJoin": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 4756,
+              "contract": "join.sol:ETHJoin",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 4804,
+              "contract": "join.sol:ETHJoin",
+              "label": "vat",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(VatLike)4543"
+            },
+            {
+              "astId": 4806,
+              "contract": "join.sol:ETHJoin",
+              "label": "ilk",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_bytes32"
+            },
+            {
+              "astId": 4808,
+              "contract": "join.sol:ETHJoin",
+              "label": "live",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(VatLike)4543": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "GemJoin": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 4549,
+              "contract": "join.sol:GemJoin",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 4597,
+              "contract": "join.sol:GemJoin",
+              "label": "vat",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(VatLike)4543"
+            },
+            {
+              "astId": 4599,
+              "contract": "join.sol:GemJoin",
+              "label": "ilk",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_bytes32"
+            },
+            {
+              "astId": 4601,
+              "contract": "join.sol:GemJoin",
+              "label": "gem",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(GemLike)4509"
+            },
+            {
+              "astId": 4603,
+              "contract": "join.sol:GemJoin",
+              "label": "dec",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 4605,
+              "contract": "join.sol:GemJoin",
+              "label": "live",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(GemLike)4509": {
+              "encoding": "inplace",
+              "label": "contract GemLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)4543": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "GemLike": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "jug.sol": {
+      "Jug": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 5154,
+              "contract": "jug.sol:Jug",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 5209,
+              "contract": "jug.sol:Jug",
+              "label": "ilks",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_struct(Ilk)5205_storage)"
+            },
+            {
+              "astId": 5211,
+              "contract": "jug.sol:Jug",
+              "label": "vat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(VatLike)5148"
+            },
+            {
+              "astId": 5213,
+              "contract": "jug.sol:Jug",
+              "label": "vow",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_address"
+            },
+            {
+              "astId": 5215,
+              "contract": "jug.sol:Jug",
+              "label": "base",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(VatLike)5148": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_bytes32,t_struct(Ilk)5205_storage)": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => struct Jug.Ilk)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Ilk)5205_storage"
+            },
+            "t_struct(Ilk)5205_storage": {
+              "encoding": "inplace",
+              "label": "struct Jug.Ilk",
+              "members": [
+                {
+                  "astId": 5202,
+                  "contract": "jug.sol:Jug",
+                  "label": "duty",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 5204,
+                  "contract": "jug.sol:Jug",
+                  "label": "rho",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "lib.sol": {
+      "LibNote": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "pot.sol": {
+      "Pot": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 5581,
+              "contract": "pot.sol:Pot",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 5631,
+              "contract": "pot.sol:Pot",
+              "label": "pie",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 5633,
+              "contract": "pot.sol:Pot",
+              "label": "Pie",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 5635,
+              "contract": "pot.sol:Pot",
+              "label": "dsr",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 5637,
+              "contract": "pot.sol:Pot",
+              "label": "chi",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 5639,
+              "contract": "pot.sol:Pot",
+              "label": "vat",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_contract(VatLike)5575"
+            },
+            {
+              "astId": 5641,
+              "contract": "pot.sol:Pot",
+              "label": "vow",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_address"
+            },
+            {
+              "astId": 5643,
+              "contract": "pot.sol:Pot",
+              "label": "rho",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 5645,
+              "contract": "pot.sol:Pot",
+              "label": "live",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)5575": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "spot.sol": {
+      "PipLike": { "storageLayout": { "storage": [], "types": null } },
+      "Spotter": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 6041,
+              "contract": "spot.sol:Spotter",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 6096,
+              "contract": "spot.sol:Spotter",
+              "label": "ilks",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_bytes32,t_struct(Ilk)6092_storage)"
+            },
+            {
+              "astId": 6098,
+              "contract": "spot.sol:Spotter",
+              "label": "vat",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(VatLike)6027"
+            },
+            {
+              "astId": 6100,
+              "contract": "spot.sol:Spotter",
+              "label": "par",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 6102,
+              "contract": "spot.sol:Spotter",
+              "label": "live",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_contract(PipLike)6035": {
+              "encoding": "inplace",
+              "label": "contract PipLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)6027": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_bytes32,t_struct(Ilk)6092_storage)": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => struct Spotter.Ilk)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Ilk)6092_storage"
+            },
+            "t_struct(Ilk)6092_storage": {
+              "encoding": "inplace",
+              "label": "struct Spotter.Ilk",
+              "members": [
+                {
+                  "astId": 6089,
+                  "contract": "spot.sol:Spotter",
+                  "label": "pip",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_contract(PipLike)6035"
+                },
+                {
+                  "astId": 6091,
+                  "contract": "spot.sol:Spotter",
+                  "label": "mat",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } }
+    },
+    "vat.sol": {
+      "Vat": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 6366,
+              "contract": "vat.sol:Vat",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 6432,
+              "contract": "vat.sol:Vat",
+              "label": "can",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+            },
+            {
+              "astId": 6509,
+              "contract": "vat.sol:Vat",
+              "label": "ilks",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_bytes32,t_struct(Ilk)6500_storage)"
+            },
+            {
+              "astId": 6515,
+              "contract": "vat.sol:Vat",
+              "label": "urns",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Urn)6505_storage))"
+            },
+            {
+              "astId": 6521,
+              "contract": "vat.sol:Vat",
+              "label": "gem",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))"
+            },
+            {
+              "astId": 6525,
+              "contract": "vat.sol:Vat",
+              "label": "dai",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 6529,
+              "contract": "vat.sol:Vat",
+              "label": "sin",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 6531,
+              "contract": "vat.sol:Vat",
+              "label": "debt",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 6533,
+              "contract": "vat.sol:Vat",
+              "label": "vice",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 6535,
+              "contract": "vat.sol:Vat",
+              "label": "Line",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 6537,
+              "contract": "vat.sol:Vat",
+              "label": "live",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bytes32": {
+              "encoding": "inplace",
+              "label": "bytes32",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => mapping(address => uint256))",
+              "numberOfBytes": "32",
+              "value": "t_mapping(t_address,t_uint256)"
+            },
+            "t_mapping(t_address,t_struct(Urn)6505_storage)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => struct Vat.Urn)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Urn)6505_storage"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Urn)6505_storage))": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => mapping(address => struct Vat.Urn))",
+              "numberOfBytes": "32",
+              "value": "t_mapping(t_address,t_struct(Urn)6505_storage)"
+            },
+            "t_mapping(t_bytes32,t_mapping(t_address,t_uint256))": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => mapping(address => uint256))",
+              "numberOfBytes": "32",
+              "value": "t_mapping(t_address,t_uint256)"
+            },
+            "t_mapping(t_bytes32,t_struct(Ilk)6500_storage)": {
+              "encoding": "mapping",
+              "key": "t_bytes32",
+              "label": "mapping(bytes32 => struct Vat.Ilk)",
+              "numberOfBytes": "32",
+              "value": "t_struct(Ilk)6500_storage"
+            },
+            "t_struct(Ilk)6500_storage": {
+              "encoding": "inplace",
+              "label": "struct Vat.Ilk",
+              "members": [
+                {
+                  "astId": 6491,
+                  "contract": "vat.sol:Vat",
+                  "label": "Art",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 6493,
+                  "contract": "vat.sol:Vat",
+                  "label": "rate",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 6495,
+                  "contract": "vat.sol:Vat",
+                  "label": "spot",
+                  "offset": 0,
+                  "slot": "2",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 6497,
+                  "contract": "vat.sol:Vat",
+                  "label": "line",
+                  "offset": 0,
+                  "slot": "3",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 6499,
+                  "contract": "vat.sol:Vat",
+                  "label": "dust",
+                  "offset": 0,
+                  "slot": "4",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Urn)6505_storage": {
+              "encoding": "inplace",
+              "label": "struct Vat.Urn",
+              "members": [
+                {
+                  "astId": 6502,
+                  "contract": "vat.sol:Vat",
+                  "label": "ink",
+                  "offset": 0,
+                  "slot": "0",
+                  "type": "t_uint256"
+                },
+                {
+                  "astId": 6504,
+                  "contract": "vat.sol:Vat",
+                  "label": "art",
+                  "offset": 0,
+                  "slot": "1",
+                  "type": "t_uint256"
+                }
+              ],
+              "numberOfBytes": "64"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      }
+    },
+    "vow.sol": {
+      "FlapLike": { "storageLayout": { "storage": [], "types": null } },
+      "FlopLike": { "storageLayout": { "storage": [], "types": null } },
+      "VatLike": { "storageLayout": { "storage": [], "types": null } },
+      "Vow": {
+        "storageLayout": {
+          "storage": [
+            {
+              "astId": 7789,
+              "contract": "vow.sol:Vow",
+              "label": "wards",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_mapping(t_address,t_uint256)"
+            },
+            {
+              "astId": 7844,
+              "contract": "vow.sol:Vow",
+              "label": "vat",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(VatLike)7783"
+            },
+            {
+              "astId": 7846,
+              "contract": "vow.sol:Vow",
+              "label": "flapper",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_contract(FlapLike)7753"
+            },
+            {
+              "astId": 7848,
+              "contract": "vow.sol:Vow",
+              "label": "flopper",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_contract(FlopLike)7733"
+            },
+            {
+              "astId": 7852,
+              "contract": "vow.sol:Vow",
+              "label": "sin",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_uint256,t_uint256)"
+            },
+            {
+              "astId": 7854,
+              "contract": "vow.sol:Vow",
+              "label": "Sin",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7856,
+              "contract": "vow.sol:Vow",
+              "label": "Ash",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7858,
+              "contract": "vow.sol:Vow",
+              "label": "wait",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7860,
+              "contract": "vow.sol:Vow",
+              "label": "dump",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7862,
+              "contract": "vow.sol:Vow",
+              "label": "sump",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7864,
+              "contract": "vow.sol:Vow",
+              "label": "bump",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7866,
+              "contract": "vow.sol:Vow",
+              "label": "hump",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_uint256"
+            },
+            {
+              "astId": 7868,
+              "contract": "vow.sol:Vow",
+              "label": "live",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_uint256"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "encoding": "inplace",
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_contract(FlapLike)7753": {
+              "encoding": "inplace",
+              "label": "contract FlapLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(FlopLike)7733": {
+              "encoding": "inplace",
+              "label": "contract FlopLike",
+              "numberOfBytes": "20"
+            },
+            "t_contract(VatLike)7783": {
+              "encoding": "inplace",
+              "label": "contract VatLike",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_address",
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_mapping(t_uint256,t_uint256)": {
+              "encoding": "mapping",
+              "key": "t_uint256",
+              "label": "mapping(uint256 => uint256)",
+              "numberOfBytes": "32",
+              "value": "t_uint256"
+            },
+            "t_uint256": {
+              "encoding": "inplace",
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          }
+        }
+      }
+    }
+  },
+  "errors": [
+    {
+      "component": "general",
+      "formattedMessage": "jug.sol:65:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 2194, "file": "jug.sol", "start": 2083 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "pot.sol:109:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3740, "file": "pot.sol", "start": 3638 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "pot.sol:117:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3970, "file": "pot.sol", "start": 3854 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "pot.sol:113:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3848, "file": "pot.sol", "start": 3746 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:96:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3991, "file": "vat.sol", "start": 3830 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:111:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4432, "file": "vat.sol", "start": 4330 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:106:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, int y) internal pure returns (int z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4325, "file": "vat.sol", "start": 4162 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:117:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4660, "file": "vat.sol", "start": 4544 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:101:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4157, "file": "vat.sol", "start": 3996 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:114:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4539, "file": "vat.sol", "start": 4437 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:96:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3991, "file": "vat.sol", "start": 3830 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:111:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4432, "file": "vat.sol", "start": 4330 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:106:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, int y) internal pure returns (int z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4325, "file": "vat.sol", "start": 4162 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:117:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4660, "file": "vat.sol", "start": 4544 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:101:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4157, "file": "vat.sol", "start": 3996 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:114:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4539, "file": "vat.sol", "start": 4437 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:96:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 3991, "file": "vat.sol", "start": 3830 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:111:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function add(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4432, "file": "vat.sol", "start": 4330 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:106:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, int y) internal pure returns (int z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4325, "file": "vat.sol", "start": 4162 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:117:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function mul(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4660, "file": "vat.sol", "start": 4544 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:101:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, int y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4157, "file": "vat.sol", "start": 3996 },
+      "type": "Warning"
+    },
+    {
+      "component": "general",
+      "formattedMessage": "vat.sol:114:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name\n    function sub(uint x, uint y) internal pure returns (uint z) {\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+      "message": "Variable is shadowed in inline assembly by an instruction of the same name",
+      "severity": "warning",
+      "sourceLocation": { "end": 4539, "file": "vat.sol", "start": 4437 },
+      "type": "Warning"
+    }
+  ],
+  "sources": {
+    "cat.sol": { "id": 0 },
+    "dai.sol": { "id": 1 },
+    "end.sol": { "id": 2 },
+    "flap.sol": { "id": 3 },
+    "flip.sol": { "id": 4 },
+    "flop.sol": { "id": 5 },
+    "join.sol": { "id": 6 },
+    "jug.sol": { "id": 7 },
+    "lib.sol": { "id": 8 },
+    "pot.sol": { "id": 9 },
+    "spot.sol": { "id": 10 },
+    "vat.sol": { "id": 11 },
+    "vow.sol": { "id": 12 }
+  }
+}
