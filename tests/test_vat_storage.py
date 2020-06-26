@@ -1,7 +1,7 @@
 import pytest
 import json
 
-from transform_storage_layout import transform
+from transform_storage_layout import get_storage_layout, transform
 
 input_data = {}
 with open("./tests/inputs/vatStorageLayout.json") as input_data_json:
@@ -10,6 +10,45 @@ with open("./tests/inputs/vatStorageLayout.json") as input_data_json:
 expected_output_data = {}
 with open("./tests/outputs/vatStorageDescription.json") as expected_output_json:
     expected_output_data = json.load(expected_output_json)
+
+test_contract_input_data = {
+    "test.sol": {
+        "Test": {
+            "storageLayout": {
+                "storage": [
+                    {
+                        "astId": 6537,
+                        "contract": "vat.sol:Vat",
+                        "label": "live",
+                        "offset": 0,
+                        "slot": "10",
+                        "type": "t_uint256"
+                    }
+                ],
+                "types": {
+                    "t_address": {
+                        "encoding": "inplace",
+                        "label": "address",
+                        "numberOfBytes": "20"
+                    },
+                    "t_uint256": {
+                        "encoding": "inplace",
+                        "label": "uint256",
+                        "numberOfBytes": "32"
+                    }
+                }
+            }
+        }
+    }
+}
+
+def test_transform_gets_contract_file_name_from_input():
+    vat_storage_layout = get_storage_layout(input_data)
+    test_storage_layout = get_storage_layout(test_contract_input_data)
+
+    assert(vat_storage_layout) == input_data["vat.sol"]["Vat"]["storageLayout"]
+    assert(test_storage_layout) == test_contract_input_data["test.sol"]["Test"]["storageLayout"]
+
 
 def test_transforms_vat_contract_storage_description():
     variable_descriptions = transform(input_data)
