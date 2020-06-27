@@ -67,12 +67,17 @@ def test_reads_vat_wards_correctly():
     # assert wards == expected_output_data[0]
 
 
-# def test_reads_vat_can_correctly():
-#     variable_descriptions = transform(input_data)
+def test_reads_vat_can_correctly():
+    variable_descriptions = transform(input_data)
 
-#     can = variable_descriptions[1]
-#     assert can == expected_output_data[1]
+    can = variable_descriptions[1]
+    assert can["name"] == expected_output_data[1]["name"]
+    assert can["slot"] == expected_output_data[1]["slot"]
+    assert can["start"] == expected_output_data[1]["start"]
+    assert can["type"] == expected_output_data[1]["type"]
+    assert can["hashmap"] == expected_output_data[1]["hashmap"]
 
+    # assert can == expected_output_data[1]
 
 # def test_reads_vat_ilks_correctly():
 #     variable_descriptions = transform(input_data)
@@ -99,14 +104,21 @@ def test_reads_vat_wards_correctly():
 #     variable_descriptions = transform(input_data)
 
 #     dai = variable_descriptions[5]
-#     assert dai == expected_output_data[5]
+#     assert dai["name"] == expected_output_data[5]["name"]
+#     assert dai["slot"] == expected_output_data[5]["slot"]
+#     assert dai["start"] == expected_output_data[5]["start"]
+#     assert dai["type"] == expected_output_data[5]["type"]
+#     assert dai["hashmap"] == expected_output_data[5]["hashmap"]
 
 # def test_reads_vat_sin_correctly():
 #     variable_descriptions = transform(input_data)
 
 #     sin = variable_descriptions[6]
-#     assert sin == expected_output_data[6]
-
+#     assert sin["name"] == expected_output_data[6]["name"]
+#     assert sin["slot"] == expected_output_data[6]["slot"]
+#     assert sin["start"] == expected_output_data[6]["start"]
+#     assert sin["type"] == expected_output_data[6]["type"]
+#     assert sin["hashmap"] == expected_output_data[6]["hashmap"]
 
 # def test_reads_vat_debt_correctly():
 #     variable_descriptions = transform(input_data)

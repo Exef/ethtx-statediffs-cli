@@ -20,10 +20,14 @@ def build_type_description(types_layout, type):
     type_description = types_layout[type]
     key1 = get_type(type_description.get("key", None))
     value = get_type(type_description.get("value", None))
+    key2 = None
+    if value == "hashmap":
+        key2 = "address"
+        value = "int"
 
     return {
         "key1": key1,
-        "key2": None,
+        "key2": key2,
         "struct": None,
         "value": value
     }
