@@ -34,27 +34,27 @@
         {
           "name": "Art",
           "shift": 0,
-          "type": "wad"
+          "type": "int"
         },
         {
           "name": "rate",
           "shift": 1,
-          "type": "ray"
+          "type": "int"
         },
         {
           "name": "spot",
           "shift": 2,
-          "type": "ray"
+          "type": "int"
         },
         {
           "name": "line",
           "shift": 3,
-          "type": "rad"
+          "type": "int"
         },
         {
           "name": "dust",
           "shift": 4,
-          "type": "rad"
+          "type": "int"
         }
       ],
       "value": "struct"
@@ -73,12 +73,12 @@
         {
           "name": "ink",
           "shift": 0,
-          "type": "wad"
+          "type": "int"
         },
         {
           "name": "art",
           "shift": 1,
-          "type": "wad"
+          "type": "int"
         }
       ],
       "value": "struct"
@@ -94,7 +94,7 @@
       "key1": "address",
       "key2": "string",
       "struct": null,
-      "value": "wad"
+      "value": "int"
     },
     "name": "gem",
     "slot": 4,
@@ -107,7 +107,7 @@
       "key1": "address",
       "key2": null,
       "struct": null,
-      "value": "rad"
+      "value": "int"
     },
     "name": "dai",
     "slot": 5,
@@ -120,7 +120,7 @@
       "key1": "address",
       "key2": null,
       "struct": null,
-      "value": "rad"
+      "value": "int"
     },
     "name": "sin",
     "slot": 6,
@@ -133,7 +133,7 @@
     "name": "debt",
     "slot": 7,
     "start": 0,
-    "type": "rad"
+    "type": "int"
   },
   {
     "end": 63,
@@ -141,7 +141,7 @@
     "name": "vice",
     "slot": 8,
     "start": 0,
-    "type": "rad"
+    "type": "int"
   },
   {
     "end": 63,
@@ -149,7 +149,7 @@
     "name": "Line",
     "slot": 9,
     "start": 0,
-    "type": "rad"
+    "type": "int"
   },
   {
     "end": 63,
