@@ -1,8 +1,16 @@
 import json
 import re
 import pprint
+from itertools import tee, islice, zip_longest
+
 
 pp = pprint.PrettyPrinter(indent=4)
+
+
+def get_next(some_iterable, window=1):
+    items, nexts = tee(some_iterable, 2)
+    nexts = islice(nexts, window, None)
+    return zip_longest(items, nexts)
 
 
 def get_storage_layout(storage_layout_from_compiler):
@@ -80,15 +88,27 @@ def build_hashmap_description(type, type_layouts):
     }
 
 
+def get_slot_end(next_layout):
+    if next_layout == None:
+        return 63
+    next_offset = int(next_layout["offset"])
+    if next_offset == None:
+        return 63
+    if next_offset == 0:
+        return 63
+    return next_offset - 1
+
+
 def transform(storage_layout_from_compiler):
     storage_layout = get_storage_layout(storage_layout_from_compiler)
     transformed = []
-    for layout in storage_layout["storage"]:
+    for layout, next_layout in get_next(storage_layout["storage"]):
         current_type = get_type(layout["type"])
         description = {
             "name": layout["label"],
             "slot": int(layout["slot"]),
-            "start": layout["offset"],
+            "start": int(layout["offset"]),
+            "end": get_slot_end(next_layout),
             "type": current_type,
         }
 
